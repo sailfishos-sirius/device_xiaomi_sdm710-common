@@ -36,19 +36,19 @@ caps: NET_BIND_SERVICE
 
 [vendor/bin/imsdatadaemon]
 mode: 0755
-user: AID_SYSTEM
-group: AID_SYSTEM
+user: AID_RADIO
+group: AID_RADIO
 caps: NET_BIND_SERVICE
 
 [vendor/bin/ims_rtp_daemon]
 mode: 0755
-user: AID_SYSTEM
+user: AID_RADIO
 group: AID_RADIO
 caps: NET_BIND_SERVICE
 
 [vendor/bin/imsrcsd]
 mode: 0755
-user: AID_SYSTEM
+user: AID_RADIO
 group: AID_RADIO
 caps: WAKE_ALARM
 
@@ -82,6 +82,24 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
+[vendor/bin/glgps]
+mode: 0755
+user: AID_GPS
+group: AID_SYSTEM
+caps: BLOCK_SUSPEND
+
+[vendor/bin/ignss_1_1]
+mode: 0755
+user: AID_GPS
+group: AID_SYSTEM
+caps: BLOCK_SUSPEND
+
+[vendor/bin/lhd]
+mode: 0755
+user: AID_GPS
+group: AID_SYSTEM
+caps: BLOCK_SUSPEND
+
 [firmware/]
 mode: 0771
 user: AID_SYSTEM
@@ -96,7 +114,7 @@ caps: 0
 
 [vendor/firmware_mnt/image/*]
 mode: 0771
-user: AID_ROOT
+user: AID_SYSTEM
 group: AID_SYSTEM
 caps: 0
 
