@@ -1,13 +1,14 @@
 #!/bin/bash
 #
 # Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2019 The XenonHD Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
 
-INITIAL_COPYRIGHT_YEAR=2018
+INITIAL_COPYRIGHT_YEAR=2019
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -26,7 +27,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
 
 # Copyright headers and guards
-write_headers "sirius"
+write_headers "grus sirius"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
