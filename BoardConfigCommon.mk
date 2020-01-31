@@ -12,7 +12,7 @@ COMMON_PATH := device/xiaomi/sdm710-common
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
+TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
@@ -138,10 +138,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-06-05
+VENDOR_SECURITY_PATCH := 2019-11-01
 
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
